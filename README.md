@@ -33,4 +33,4 @@ day_of_week:
     - 7 - Sunday
 ```
 
-Using `{{ day_of_week|substr:3 }}` inside with entries loop will keep the output neat as "Monday, Tuesday" etc. instead of "1 - Monday, 2 - Tuesday" etc. 
+Using `{{ day_of_week|substr:3 }}` inside the entries loop will keep the output neat as "Monday, Tuesday" etc. instead of "1 - Monday, 2 - Tuesday" etc. 
