@@ -34,3 +34,5 @@ day_of_week:
 ```
 
 Using `{{ day_of_week|substr:3 }}` inside the entries loop will keep the output neat as "Monday, Tuesday" etc. instead of "1 - Monday, 2 - Tuesday" etc. 
+
+Note: This is the equivalent of `{{ day_of_week|reverse|backspace:3|reverse }}` which is a bit verbose.
