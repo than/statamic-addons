@@ -9,9 +9,9 @@
 class Modifier_substr extends Modifier
 {
     public function index($value, $parameters=array()) {
-        if (isset($parameters[1])) {
+        if ( isset($parameters[1]) ) {
             return substr($value, $parameters[0], $parameters[1]);           
-        } elseif (isset($parameters[0])) {
+        } elseif ( isset($parameters[0]) ) {
             return substr($value, $parameters[0]);           
         } else {
             return $value;
