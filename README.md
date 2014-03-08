@@ -11,13 +11,7 @@ A collection of Statamic addons and utilities.
 
 Substr accepts one or two integers and returns the resulting substring.
 
-If `{{ variable }}` is set to output the string "This is text", this variable tag
-
-```
-{{ variable|substr:2:-1 }}
-```
-
-... will output "his is tex".
+If `{{ variable }}` is set to output the string "This is text", this variable tag `{{ variable|substr:2:-1 }}` will output "his is tex".
 
 ### In Practice
 
