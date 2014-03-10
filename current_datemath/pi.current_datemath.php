@@ -1,9 +1,12 @@
 <?php
 /**
- * Displays the current date.
- * Modified to allow addition and subtraction. 
+ * Displays the current date and allows for date addition and subtraction. 
+ * Usage: {{ current_datemath add="3" }} or {{ current_datemath subtract="4" }}
+ * Usage: {{ current_datemath plus="3" }} or {{ current_datemath minus="4" }}
+ *
+ * @author  Than Tibbetts
  */
-class Plugin_current_date extends Plugin
+class Plugin_current_datemath extends Plugin
 {
     public function index()
     {
@@ -25,5 +28,7 @@ class Plugin_current_date extends Plugin
         }
         
         return date_format($today, $format);
+        
     }
+
 }
