@@ -48,4 +48,4 @@ This hack adds two new parameters to the `{{ current_tag }}` tag: `add` and `sub
 
 ### Usage
 
-If today is *2014-03-10*, {{ current_date add="10" }} will return *2014-03-20*.
+If today is *2014-03-10*, `{{ current_date add="10" }}` will return *2014-03-20*.
