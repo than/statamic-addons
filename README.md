@@ -36,3 +36,16 @@ day_of_week:
 Using `{{ day_of_week|substr:3 }}` inside the entries loop will keep the output neat as "Monday, Tuesday" etc. instead of "1 - Monday, 2 - Tuesday" etc. 
 
 Note: This is the equivalent of `{{ day_of_week|reverse|backspace:3|reverse }}` which is a bit verbose.
+
+
+## Current Date
+
+Note: **This is a core hack!**
+
+And a caveat: the sensible thing is probably to break down and use PHP in my templates, but I'm holding fast to my no-PHP rule for now.
+
+This hack adds two new parameters to the `{{ current_tag }}` tag: `add` and `subtract`. This allows you to add or subtract any number of days from the current date and output the date in the format specified by the `format` parameter as per usual.
+
+### Usage
+
+If today is *2014-03-10*, {{ current_date add="10" }} will return *2014-03-20*.
