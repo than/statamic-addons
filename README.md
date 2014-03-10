@@ -38,14 +38,16 @@ Using `{{ day_of_week|substr:3 }}` inside the entries loop will keep the output 
 Note: This is the equivalent of `{{ day_of_week|reverse|backspace:3|reverse }}` which is a bit verbose.
 
 
-## Current Date
+## Current Datemath
 
-Note: **This is a core hack!**
+This plugin allows you to run date addution and subtraction operations on today's date. 
 
-And a caveat: the sensible thing is probably to break down and use PHP in my templates, but I'm holding fast to my no-PHP rule for now.
+The `{{ current_datemath }}` tag accepts `add`, `plus`, `subtract` and `minus` parameters. This allows you to add or subtract any number of days from the current date and output the date in the format specified by the `format` parameter as per usual.
 
-This hack adds two new parameters to the `{{ current_tag }}` tag: `add` and `subtract`. This allows you to add or subtract any number of days from the current date and output the date in the format specified by the `format` parameter as per usual.
+The tag also accepts the standard `format` parameter following 
 
 ### Usage
 
-If today is *2014-03-10*, `{{ current_date add="10" }}` will return *2014-03-20*.
+If today is *2014-03-10*, `{{ current_datemath add="10" }}` will return *2014-03-20*.
+
+If today is *2014-03-10*, `{{ current_datemath minus="10" format="F jS"}}` will return *February 28th*.
