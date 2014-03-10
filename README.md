@@ -42,7 +42,7 @@ Note: This is the equivalent of `{{ day_of_week|reverse|backspace:3|reverse }}` 
 
 This plugin allows you to run date addution and subtraction operations on today's date. 
 
-The `{{ current_datemath }}` tag accepts `add`, `plus`, `subtract` and `minus` parameters. This allows you to add or subtract any number of days from the current date and output the date in the format specified by the `format` parameter as per usual.
+The `{{ current_datemath }}` tag accepts integers in `add`, `plus`, `subtract` and `minus` parameters. As you might expect, `add` and `plus` increases the date by the provided number of days and `subtract` and `minus` decreases the date.
 
 The tag also accepts the standard `format` parameter following 
 
