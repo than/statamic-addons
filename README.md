@@ -44,7 +44,7 @@ This plugin allows you to run date addution and subtraction operations on today'
 
 The `{{ current_datemath }}` tag accepts integers in `add`, `plus`, `subtract` and `minus` parameters. As you might expect, `add` and `plus` increases the date by the provided number of days and `subtract` and `minus` decreases the date.
 
-The tag also accepts the standard `format` parameter following 
+The tag also accepts the standard `format` parameter found in the `{{ current_date }}` tag. 
 
 ### Usage
 
