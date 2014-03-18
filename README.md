@@ -51,3 +51,15 @@ The tag also accepts the standard `format` parameter found in the `{{ current_da
 If today is *2014-03-10*, `{{ current_datemath add="10" }}` will return *2014-03-20*.
 
 If today is *2014-03-10*, `{{ current_datemath minus="10" format="F jS"}}` will return *February 28th*.
+
+## nbsp
+
+**Nbsp** is a variable modifier that replaces spaces with non-breaking spaces &mdash; *&amp;nbsp;*.
+
+A tag set to output *'The quick brown fox'* will now return *'The&amp;nbsp;quick&amp;nbsp;brown&amp;nbsp;fox'*.
+
+### Usage
+
+Simply add the `nbsp` modifer to your variable tag and you're all set: `{{ variable|nbsp }}`.
+
+This came in handy as I was building a responsive navigation bar and needed each nav item to remain intact as the viewport became smaller.
