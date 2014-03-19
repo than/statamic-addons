@@ -3,6 +3,7 @@ Statamic Addons
 
 A collection of Statamic addons and utilities.
 
+
 ## Substr
 
 **Substr** is a variable modifier that exposes PHP's `substr` function in your templates.
@@ -52,6 +53,7 @@ If today is *2014-03-10*, `{{ current_datemath add="10" }}` will return *2014-03
 
 If today is *2014-03-10*, `{{ current_datemath minus="10" format="F jS"}}` will return *February 28th*.
 
+
 ## nbsp
 
 **Nbsp** is a variable modifier that replaces spaces with non-breaking spaces &mdash; *&amp;nbsp;*.
@@ -63,3 +65,6 @@ A tag set to output *'The quick brown fox'* will now return *'The&amp;nbsp;quick
 Simply add the `nbsp` modifer to your variable tag and you're all set: `{{ variable|nbsp }}`.
 
 This came in handy as I was building a responsive navigation bar and needed each nav item to remain intact as the viewport became smaller.
+
+
+## Next Date
