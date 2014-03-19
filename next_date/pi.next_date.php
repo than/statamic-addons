@@ -1,8 +1,8 @@
 <?php
 /**
  * Given the name of a day, plugin returns the next date of the supplied day 
- * Usage: {{ next_date day='{day}' }}
- * Usage: {{ next_date day='{day}' format="F jS" }}
+ * Usage: {{ next_date day="{day}" }}
+ * Usage: {{ next_date day="{day}" format="F jS" }}
  *
  * @author  Than Tibbetts
  */
