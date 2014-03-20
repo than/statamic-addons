@@ -8,13 +8,13 @@ A collection of Statamic addons and utilities.
 
 **Substr** is a variable modifier that exposes PHP's `substr` function in your templates.
 
-### Usage
+#### Usage
 
 Substr accepts one or two integers and returns the resulting substring.
 
 If `{{ variable }}` is set to output the string "This is text", this variable tag `{{ variable|substr:2:-1 }}` will output "his is tex".
 
-### In Practice
+#### In Practice
 
 A great way to use **Substr** is as a way to order entries loops by a select field. For example, imagine a select field which contains the days of the week. `{{ entries:listing sort_by="day_of_week" }}` will sort the resulting list alphabetically. 
 
@@ -47,7 +47,7 @@ The `{{ current_datemath }}` tag accepts integers in `add`, `plus`, `subtract` a
 
 The tag also accepts the standard `format` parameter found in the `{{ current_date }}` tag. 
 
-### Usage
+#### Usage
 
 If today is *2014-03-10*, `{{ current_datemath add="10" }}` will return *2014-03-20*.
 
@@ -60,7 +60,7 @@ If today is *2014-03-10*, `{{ current_datemath minus="10" format="F jS"}}` will 
 
 A tag set to output *'The quick brown fox'* will now return *'The&amp;nbsp;quick&amp;nbsp;brown&amp;nbsp;fox'*.
 
-### Usage
+#### Usage
 
 Simply add the `nbsp` modifer to your variable tag and you're all set: `{{ variable|nbsp }}`.
 
@@ -68,3 +68,13 @@ This came in handy as I was building a responsive navigation bar and needed each
 
 
 ## Next Date
+
+Given a day of the week, this plugin gives you the date of next occurance of that day.
+
+#### Usage
+
+The `{{ next_date }}` tag requires a `day` parameter &mdash; 'Monday', 'Tuesday', etc. &mdash; and accepts the standard `format` parameter for specifying the date format.
+
+In practice, I use this tag to manage a set of recurring weekly events. With this tag, I can get the next *date* of an event that occurs every Monday. In effect: "next Monday". 
+
+For example, if today is March 20th, 2014, `{{ next_date day="{day}" format="F jS" }}` and `{day}` returns 'Monday', the tag will output "March 24, 2014". 
