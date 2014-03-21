@@ -75,6 +75,6 @@ Given a day of the week, this plugin gives you the date of next occurance of tha
 
 The `{{ next_date }}` tag requires a `day` parameter &mdash; 'Monday', 'Tuesday', etc. &mdash; and accepts the standard `format` parameter for specifying the date format.
 
-In practice, I use this tag to manage a set of recurring weekly events. With this tag, I can get the next *date* of an event that occurs every Monday. In effect: "next Monday". 
+In practice, I use this tag to manage a set of recurring weekly events. With this tag, I can get the next *date* of an event that occurs every Monday. In effect: *next Monday*.
 
-For example, if today is March 20th, 2014, `{{ next_date day="{day}" format="F jS" }}` and `{day}` returns 'Monday', the tag will output "March 24, 2014". 
+For example, if today is March 20th, 2014, `{{ next_date day="{day}" format="F jS" }}` and `{day}` returns *Monday*, the tag will output *March 24, 2014*. 
