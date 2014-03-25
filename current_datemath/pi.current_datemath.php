@@ -13,10 +13,8 @@ class Plugin_current_datemath extends Plugin
         $format = $this->fetchParam('format', 'Y-m-d', null, FALSE, FALSE);
         
         $add = $this->fetchParam('add', '0', null, FALSE, FALSE) . ' days';
-        $add = $this->fetchParam('plus', '0', null, FALSE, FALSE) . ' days';
         $subtract = $this->fetchParam('subtract', '0', null, FALSE, FALSE) . ' days';
-        $subtract = $this->fetchParam('minus', '0', null, FALSE, FALSE) . ' days';
-        
+
         $today = new DateTime();
         
         if ( $add != 0 ) {
