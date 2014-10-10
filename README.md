@@ -8,7 +8,7 @@ A collection of Statamic addons and utilities.
 
 If you've ever wanted to store multiple dates on a single entry, this is the add-on for you.
 
-![Multidate's inline datepicker](http://dirigible.us/add-ons/multidate/multidate-dropdown.png)
+![Multidate's inline datepicker](http://dirigible.us/add-ons/multidate/images/multidate-inline.png)
 
 [Find out more &raquo;](http://lodge.statamic.com/public-house/346-multidate-for-statamic)
 
