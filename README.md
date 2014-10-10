@@ -16,7 +16,7 @@ If `{{ variable }}` is set to output the string "This is text", this variable ta
 
 #### In Practice
 
-A great way to use **Substr** is as a way to order entries loops by a select field. For example, imagine a select field which contains the days of the week. `{{ entries:listing sort_by="day_of_week" }}` will sort the resulting list alphabetically. 
+A great way to use **Substr** is as a way to order entries loops by a select field. For example, imagine a select field which contains the days of the week. `{{ entries:listing sort_by="day_of_week" }}` will sort the resulting list alphabetically.
 
 By adding a number to the beginning of each select item, you can sort by the day of the week.
 
@@ -34,18 +34,18 @@ day_of_week:
     - 7 - Sunday
 ```
 
-Using `{{ day_of_week|substr:3 }}` inside the entries loop will keep the output neat as "Monday, Tuesday" etc. instead of "1 - Monday, 2 - Tuesday" etc. 
+Using `{{ day_of_week|substr:3 }}` inside the entries loop will keep the output neat as "Monday, Tuesday" etc. instead of "1 - Monday, 2 - Tuesday" etc.
 
 Note: This is the equivalent of `{{ day_of_week|reverse|backspace:3|reverse }}` which is a bit verbose.
 
 
 ## Current Datemath
 
-This plugin allows you to run date addution and subtraction operations on today's date. 
+This plugin allows you to run date addution and subtraction operations on today's date.
 
 The `{{ current_datemath }}` tag accepts integers in `add` and `subtract` parameters. As you might expect, `add` increases the date by the provided number of days while `subtract` decreases the date.
 
-The tag also accepts the standard `format` parameter found in the `{{ current_date }}` tag. 
+The tag also accepts the standard `format` parameter found in the `{{ current_date }}` tag.
 
 #### Usage
 
@@ -77,4 +77,17 @@ The `{{ next_date }}` tag requires a `day` parameter &mdash; 'Monday', 'Tuesday'
 
 In practice, I use this tag to manage a set of recurring weekly events. With this tag, I can get the next *date* of an event that occurs every Monday. In effect: *next Monday*.
 
-For example, if today is March 20th, 2014, `{{ next_date day="{day}" format="F jS" }}` and `{day}` returns *Monday*, the tag will output *March 24, 2014*. 
+For example, if today is March 20th, 2014, `{{ next_date day="{day}" format="F jS, Y" }}` and `{day}` returns *Monday*, the tag will output *March 24th, 2014*.
+
+
+## Previous Date
+
+Given a day of the week, this plugin gives you the date of previous occurance of that day.
+
+#### Usage
+
+The `{{ prev_date }}` tag requires a `day` parameter &mdash; 'Monday', 'Tuesday', etc. &mdash; and accepts the standard `format` parameter for specifying the date format.
+
+In practice, I use this tag to manage a set of recurring weekly events. With this tag, I can get the next *date* of an event that occurs every Monday. In effect: *next Monday*.
+
+For example, if today is October 2nd, 2014, `{{ prev_date day="{day}" format="F jS, Y" }}` and `{day}` returns *Thursday*, the tag will output *September 25th, 2014*.
