@@ -4,6 +4,17 @@ Statamic Addons
 A collection of Statamic addons and utilities.
 
 
+## [Multidate for Statamic](http://lodge.statamic.com/public-house/346-multidate-for-statamic)
+
+If you've ever wanted to store multiple dates on a single entry, this is the add-on for you.
+
+![Multidate's inline datepicker](http://dirigible.us/add-ons/multidate/multidate-dropdown.png)
+
+[Find out more &raquo;](http://lodge.statamic.com/public-house/346-multidate-for-statamic)
+
+[Download and donate &raquo;](https://gumroad.com/l/multidate-for-statamic)
+
+
 ## Substr
 
 **Substr** is a variable modifier that exposes PHP's `substr` function in your templates.
