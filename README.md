@@ -121,3 +121,11 @@ Add the following CSS into your site's theme and you so fancy.
 `.fancyamp { color: inherit; font-size: inherit; font-family: Baskerville, Palatino, "Palatino Linotype", "Book Antiqua", "Constantia", serif; font-style:italic; }`
 
 Don't like the look of Baskerville's **&amp;**? See [Use the Best Available Ampersand](http://simplebits.com/notebook/2008/08/14/ampersands-2/) for more suggestions.
+
+## Hide Order
+
+Does what it says on the tin. This add-on hides the *Order Number* field in the entry editor.
+
+#### Usage
+
+Drop the `hide_order` folder into your `_add-ons` directory.
