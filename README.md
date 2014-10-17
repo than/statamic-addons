@@ -138,3 +138,12 @@ Also what it says on the tin. This add-on hides the *Publish Date* field in the 
 #### Usage
 
 Drop the `hide_publish_date` folder into your `_add-ons` directory.
+
+
+## Publish Date on Bottom
+
+Surprise! It does what it says on the tin. This add-on puts the *Publish Date* field at the bottom of all other fields in the entry editor.
+
+#### Usage
+
+Drop the `publish_date_on_bottom` folder into your `_add-ons` directory.
