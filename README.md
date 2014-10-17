@@ -131,7 +131,7 @@ Does what it says on the tin. This add-on hides the *Order Number* field in the 
 Drop the `hide_order` folder into your `_add-ons` directory.
 
 
-## Hide Order
+## Hide Publish Date
 
 Also what it says on the tin. This add-on hides the *Publish Date* field in the entry editor.
 
