@@ -151,10 +151,15 @@ Drop the `publish_date_on_bottom` folder into your `_add-ons` directory.
 
 ## Homescreen Icon
 
-Give your control panel the homescreen icon it deserves. This small addon generates the link tag for the icon. Touch 'Add to Homescreen' in your mobile device to create the bookmark.
+Give your control panel the homescreen icon it deserves. This small addon generates the link tag for the icon. 
 
 I've included a transparent png which makes it easy to add your site's logo or image with a Statamic bug in the corner.
 
 #### Usage
 
-Drop the `hide_publish_date` folder into your `_add-ons` directory.
+Drop the `homescreen_icon` folder into your `_add-ons` directory.
+
+Touch 'Add to Homescreen' in your mobile device to create the bookmark.
+
+![](http://than.to/1hdsU.png)
+
