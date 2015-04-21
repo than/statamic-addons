@@ -52,18 +52,7 @@ Note: This is the equivalent of `{{ day_of_week|reverse|backspace:3|reverse }}` 
 
 ## Current Datemath
 
-This plugin allows you to run date addution and subtraction operations on today's date.
-
-The `{{ current_datemath }}` tag accepts integers in `add` and `subtract` parameters. As you might expect, `add` increases the date by the provided number of days while `subtract` decreases the date.
-
-The tag also accepts the standard `format` parameter found in the `{{ current_date }}` tag.
-
-#### Usage
-
-If today is *2014-03-10*, `{{ current_datemath add="10" }}` will return *2014-03-20*.
-
-If today is *2014-03-10*, `{{ current_datemath minus="10" format="F jS"}}` will return *February 28th*.
-
+This plugin allows you to run date addution and subtraction operations on today's date. [Repository](https://github.com/Dirigible/Statamic-Current-Datemath)
 
 ## nbsp
 
